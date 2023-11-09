@@ -12,7 +12,9 @@ body {
 .layout_padding2 {
   padding: 75px 0;
 }
-
+.layout_padding3 {
+  padding: 50px 0;
+}
 .layout_padding2-top {
   padding-top: 75px;
 }
@@ -242,6 +244,14 @@ a:focus {
   margin-right: auto;
   margin-left: auto;
   border: 1px solid white;
+}
+.container-fluid_1_2 {
+  width: 77%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ 
 }
 .navbar-brand img {
   width: 150px;
@@ -551,7 +561,7 @@ p {
   -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.15);
   padding: 45px 15px;
-  margin: 0 25px;
+  margin: 0 25px;background: white;
 }
 
 .service_section .box {
@@ -828,6 +838,7 @@ p {
           transform: translate(-50%, -50%);
   color: #f07b26;
   font-size: 20px;
+  z-index: 10000;
 }
 
 
@@ -1076,6 +1087,7 @@ h5{
   transition: all .3s;
   border: none;
 }
+
 
 .contact_section .form_container button:hover {
   background-color: #08328f;
