@@ -36,11 +36,51 @@
 }
 
 .item {
-  width: calc(33.33% - 20px); 
-  margin-bottom: 20px; 
+  width: calc(25% - 0px); 
+  /* margin-bottom: 20px;  */
+  /* padding:15px; */
+  width: calc(25% - 0px);
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 p{
   color:white;
+  
+}
+.img-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(248, 236, 236, 0);
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+.parallelogram {
+	width: 20%;
+    /* height: 50px; */
+    transform: skew(20deg);
+    background: #495d88;
+    position: relative;
+    left: 40%;
+    padding: 1%;
+    text-align: center;
+    font-size: 1rem;
+    color: white;  
+}
+
+.parallelogram span {
+    display: inline-block;
+    transform: skew(-20deg);
 }
 </style>
 </head>
@@ -72,9 +112,9 @@ p{
                 <li class="nav-item dropdown cool-link">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
                   <ul class="dropdown-menu">
-                    <li><a href="complete.html">Completed</a></li>
-                    <li><a href="undercontruction.html">UnderConstruction</a></li>
-                    <li><a href="upcoming.html">Upcoming</a></li>
+                    <li><a class="test"  href="complete.html">Completed</a></li>
+                    <li><a  class="test" href="undercontruction.html">UnderConstruction</a></li>
+                    <li><a  class="test" href="upcoming.html">Upcoming</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown cool-link">
@@ -94,7 +134,7 @@ p{
     </header>
     <!-- end header section -->
   </div>
-  <section class="slider_section "  style="height: 500px; background-image: url(https://img.freepik.com/premium-photo/future-building-construction-engineering-project_31965-2643.jpg?w=826);
+  <section class="slider_section "  style="height: 500px; background-image: url(https://img.freepik.com/premium-photo/future-building-construction-engineering-project_31965-6206.jpg?w=826);
   background-size: cover;">
   
 <div class="page_des_1" >
@@ -104,94 +144,98 @@ p{
 </section><br><br><br>
   <!-- project section -->
 
-  <section class="project_section_1">
-    <div style="position: relative;width: 100%;left: 0;text-align: center;font-size: 1.5rem;color:#495d88">Completed  Projects</div><br>
-    <div class="container2 flex-container">
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Sai Darshan
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project2.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Renuka Shobha
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Renuka Sai
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Sai Anagan
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
+  <section class="project_section_1" style="padding: 40px;">
+    <div class="parallelogram"><span>Completed Projects</span></div><br>
+      <div class="container2 flex-container">
         
-      </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/project1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Sai Vrindavan
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
+        <div class="item">
+          <a href="vista.html" class="pin_link"> <div class="box">
+         
+            <div class="img-box">
+              <img src="images/6.jpg" alt="" />
+            </div>
+            <div class="detail-box">
+              <p style="color: #828895;font-size: 12px;">Residential</p>
+              <h5>Sai Darshan </h5>
+              <p style="color: #828895;font-size: 12px;">Location</p>
+              <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
             </div>
           </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="nilay.html" class="pin_link"><div class="box">
+            <div class="img-box">
+              <img src="images/7.jpg" alt="" />
+            </div>
+            <div class="detail-box">
+                <p style="color: #828895;font-size: 12px;">Residential</p>
+                <h5> Renuka Shobha</h5>
+                <p style="color: #828895;font-size: 12px;">Location</p>
+                <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+              </div>
+          </div>
+        </a>
+        </div>
+        <div class="item">
+          <a href="vista.html" class="pin_link"> <div class="box">
+                <div class="img-box">
+                  <img src="images/3.jpg" alt="" />
+                </div>
+                <div class="detail-box">
+                  <p style="color: #828895;font-size: 12px;">Residential</p>
+                  <h5>Renuka Sai</h5>
+                  <p style="color: #828895;font-size: 12px;">Location</p>
+                  <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="item">
+              <a href="vista.html" class="pin_link">  <div class="box">
+                <div class="img-box">
+                  <img src="images/9.jpg" alt="" />
+                </div>
+                <div class="detail-box">
+                  <p style="color: #828895;font-size: 12px;">Residential</p>
+                  <h5>Sai Anagan</h5>
+                  <p style="color: #828895;font-size: 12px;">Location</p>
+                  <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="vista.html" class="pin_link"> <div class="box">
+                <div class="img-box">
+                  <img src="images/5.jpg" alt="" />
+                </div>
+                <div class="detail-box">
+                  <p style="color: #828895;font-size: 12px;">Residential</p>
+                  <h5>Sai Vrindavan</h5>
+                  <p style="color: #828895;font-size: 12px;">Location</p>
+                  <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+                </div>
+              </div>
+            </a>
+            </div>
          
-     
-    </div>
-  </section>
+           
+       
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- end project section -->
 
