@@ -45,12 +45,12 @@ p{
 .contact_section .form_container {
     margin-right: 15px;
     padding: 20px;
-    box-shadow: rgb(251 247 247 / 35%) 0px 3px 5px;
+    box-shadow: rgb(9 6 153 / 35%) 0px 3px 5px;
 }
 .logo_vista{
     width: 40%;
     position: relative;
-    left: 35%;
+    left: 30%;
 }
 .dudul{
     width: 100%;
@@ -60,18 +60,18 @@ p{
     color: white;
     font-size: 5rem;
     font-weight: 900;
-    text-transform: uppercase;
+    text-transform: uppercase;z-index: 1;
 }
 .info{
-    width: 100%;
+  width: 100%;
     left: 0;
     position: relative;
-    text-align: center;
+    text-align: justify;
     background-color: #7b8395;
     color: white;
-    margin-top: -49px;
-    padding: 20px;
-    font-size: 20px;
+    margin-top: -59px;
+    padding: 39px;
+    font-size: 14px;
 }
 .inn{
     margin-left: 70px;font-size: 14px;
@@ -85,6 +85,80 @@ p{
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     box-shadow: rgb(255 250 250 / 15%) 1.95px 1.95px 2.6px;
 }
+.flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Distribute items evenly along the row */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Individual flex items styles */
+        .flex-item {
+            flex-basis: calc(25% - 20px); /* 25% width with margin on both sides */
+            margin: 10px; /* Adjust spacing between items */
+            box-sizing: border-box; /* Include padding and border in the box sizing */
+            text-align: center;
+        }
+
+        /* Image styles */
+        .flex-item img {
+            max-width: 35%;
+            height: auto;
+        }
+        .flex-item p {
+            margin-top: 10px;font-size: 13px;
+        }
+        p {
+              color: #011748;
+              font-weight: 700;
+           }
+           .floorplan{
+                         width: 50%;
+                         height: auto;
+                         position: relative;
+                         margin-left: 25%;
+           }
+     .download-button {
+               display: inline-block;
+                font-size: 16px;
+                text-align: center;
+                 text-decoration: none;
+                background-color: #3498db;
+                 color: #ffffff;
+                 border-radius: 5px;
+                 cursor: pointer;
+                 transition: background-color 0.3s;
+                 margin-left: 40%;
+                 margin-top: 3%;
+                 width: 20%;
+        }
+
+        .download-button:hover {
+            background-color: #2980b9; color: #ffffff;
+        }
+        .contact_section .form_container button {
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 55px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: none;
+}
+.contact_section .form_container button:hover {
+  background-color: #08328f;color:white;
+}
+.contact_section .form_container input::placeholder {
+      color:rgb(173, 173, 173);    }
+.vista-content{
+        color: #828895;
+    font-size: 14px;
+    text-align: justify;font-weight: 300;
+      }
 </style>
 </head>
 
@@ -115,9 +189,9 @@ p{
                 <li class="nav-item dropdown cool-link">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
                   <ul class="dropdown-menu">
-                    <li><a href="complete.html">Completed</a></li>
-                    <li><a href="undercontruction.html">UnderConstruction</a></li>
-                    <li><a href="upcoming.html">Upcoming</a></li>
+                    <li><a  class="test" href="complete.html">Completed</a></li>
+                    <li><a  class="test" href="undercontruction.html">UnderConstruction</a></li>
+                    <li><a class="test"  href="upcoming.html">Upcoming</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown cool-link">
@@ -138,17 +212,152 @@ p{
     <!-- end header section -->
   </div>
   
-  <!-- contact section -->
-  <section class="contact_section layout_padding3" style="background-color: #324e8a;"> 
+ 
+ <!-- vista -->
+ <section class="vista_section layout_padding3" style="background-color: #011132;"> 
     <div class="container-fluid_1_2">
       <div class="row">
-       
-        <div class="col-lg-7 col-md-6" style="color:white;padding: 20px;">
-          <h4>Discover the essence of Dudulgaon's pride first-hand</h4>
-             <img src="images/whitelogo.png" alt="" class="logo_vista">
+        <span class="dudul">Dudulgaon</span>
+        <span class="info"><br>
+            Embrace a lifestyle that eloquently tells the story of grace and sophistication. <br><br>
+
+            Renuka nilay offers 1, 2, and 3 BHK flats in Dudulgaon.
+            Renuka Nilay, your haven of happiness, situated in Dudulgaon, offers meticulously designed 1, 2, and 3 BHK residences. With lush gardens and modern amenities, it stands as the epitome of sophisticated living in the area.<br><br><br>
+            
+            Why compromise on the most substantial commitment of your life—your home—when your ultimate goal is to provide your family with the finest living experience? These 2 BHK flats in Dudulgaon, boast state-of-the-art amenities, excellent connectivity, and a breathtaking view, making Renuka Nilay one of the most esteemed spaces and the perfect home you've been seeking. It's an opportunity that turns dreams into reality.<br><br><br>
+            
+            Renuka Nilay stands as the perfect choice for those seeking to purchase a 3 BHK flat in Dudulgaon. It offers exceptional road, rail, and upcoming metro connectivity, along with easy access to all the necessary amenities for a luxurious lifestyle. Supermarkets, hospitals, schools, parks, and more are conveniently situated in close proximity to Renuka Nilay.
+        </span>
+      </div>
+    </div>
+  </section>
+ <!-- contact section -->
+ <section class="contact_section layout_padding3" style="background-color: #fbf9f9;"> 
+  <div class="container-fluid_1_2">
+    <div class="row">
+     
+      <div class="col-lg-7 col-md-6" style="color:#324e8a;padding: 20px;">
+        <h4>Discover the essence of Dudulgaon's pride first-hand</h4>
+           <img src="images/nilay/nilay.png" alt="" class="logo_vista">
+           <h6 class="text-center">MAHA RERA No.:- P521000000000</h6>
+           <p class="vista-content">Nestled in Dudulgaon, Renuka Nilay invites you to experience a haven of happiness through its meticulously designed 1, 2, and 3 BHK residences. This residential gem harmoniously blends modern elegance with nature's beauty, boasting lush gardens that embrace the property. Beyond the aesthetic appeal, Renuka Nilay sets itself apart by providing a lifestyle defined by contemporary amenities, elevating it to the epitome of sophisticated living in the area. Whether it's the thoughtfully planned interiors or the serene outdoor spaces, every aspect of Renuka Nilay reflects a commitment to creating a truly refined living experience, making it the ideal choice for those seeking a sanctuary of comfort and style in Dudulgaon.</p>
+      </div>
+       <div class="col-lg-4 col-md-5 offset-md-1">
+        <div class="form_container">
+          <form action="">
+            <div>
+              <input type="text" placeholder="Your Name" />
+            </div>
+            <div>
+              <input type="text" placeholder="Phone Number" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Message" />
+            </div>
+            <div class="btn_box">
+              <button style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  background: white;color: #082e81;">
+                SEND
+              </button>
+            </div>
+          </form>
         </div>
-         <div class="col-lg-4 col-md-5 offset-md-1">
-          <div class="form_container">
+      </div>
+    </div>
+  </div>
+</section><br><br><br>
+<!-- end contact section -->
+  <!-- Nilay -->
+  <!-- building -->
+  <section class="elevation_section" style="background-color: #324e8a;"> 
+    <div class="container-fluid_n">
+      <div class="row">
+       
+        <div class="col-lg-7 col-md-6">
+       
+             <img src="images/elevation.jpeg" alt="" style="width: 100%;">
+        </div>
+         <div class="col-lg-4 col-md-5  layout_padding inn" style="color: white;text-align: justify;">
+            <h3>New design. <br>
+                New pleasures.</h3>
+                <span > Renuka Nilay presents an opulent lifestyle merging elegant design, careful planning, and intricate attention to detail. The internal structure and aesthetics, along with the serene external amenities, establish an atmosphere that is not only welcoming but also energizing.</span><br>
+                <span class="e_now">Enquiry Now</span>
+        </div>
+      </div>
+    </div>
+  </section><br><br><br>
+  <!-- building -->
+
+<!-- amminities -->
+<section class="elevation_section"> 
+       <div style="position: relative;width: 100%;left:0;text-align:center;font-size: 2rem;color:#324e8a;font-weight: 300;">
+             Amenities Of Nilay
+       </div>
+       <div style="position: relative;width: 100%;left:0;text-align:center;font-size:1rem;
+       color: #435887;line-height:2.2;">
+        Looking for a1,2 & 3 BHK Flat in Dudulgaon? Nilay is the<br>
+        best new residential project in Dudulgaon. It provides amenities like:<br><br>
+       </div>
+       <div class="flex-container">
+        <div class="flex-item">
+            <img src="images/club-house.png" alt="Image 1">
+            <p>Attractive Main Gate</p>
+        </div>
+        <div class="flex-item">
+            <img src="images/kids-play-area.png" alt="Image 2">
+            <p>Fitness Center</p>
+        </div>
+        <div class="flex-item">
+            <img src="images/club-house.png" alt="Image 3">
+            <p>Society Office</p>
+        </div>
+        <div class="flex-item">
+            <img src="images/kids-play-area.png" alt="Image 4">
+            <p>Creche Center</p>
+        </div>
+        <div class="flex-item">
+          <img src="images/club-house.png" alt="Image 1">
+          <p>Club House</p>
+      </div>
+      <div class="flex-item">
+          <img src="images/kids-play-area.png" alt="Image 2">
+          <p>Solar Water Heater</p>
+      </div>
+      <div class="flex-item">
+          <img src="images/club-house.png" alt="Image 3">
+          <p>Seawage Water Treatment Plant </p>
+      </div>
+      <div class="flex-item">
+          <img src="images/kids-play-area.png" alt="Image 4">
+          <p>Rainwater Harvesting</p>
+      </div>
+      <div class="flex-item">
+        <img src="images/kids-play-area.png" alt="Image 4">
+        <p>Driver Rest Room</p>
+    </div>
+    </div> 
+</section><br><br><br>
+<!-- amminities -->
+
+<!-- Floor Plan -->
+<section class="elevation_section" style="background: #1c1c17!important;padding: 40px"> 
+      <div style="position: relative;width: 100%;left:0;text-align:center;font-size: 2rem;color:white;    font-weight: 300;"> FLOOR PLAN OF RENUKA NILAY </div>
+      <div style="position: relative;width: 100%;left:0;text-align:center;font-size:1rem;
+      color: white;line-height:2.2;">Discover the epitome of luxury in Dudulgaon with our 1 & 2 BHK flats.<br>Where design meets artistry, quality exceeds expectations, and support is unparalleled. </div>
+     <img src="images/floorplan.png" alt="" class="floorplan" /> <br>
+     <a href="images/abc.pdf" class="download-button" download target="_blank">Download Brochure</a>
+</section><br><br><br>
+<!-- Floor Plan -->
+
+  <!-- contact section -->
+  <section class="contact_section"> 
+    <div class="container-fluid_1">
+     
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="form_container" style="background: #0f0f0f;">
             <form action="">
               <div>
                 <input type="text" placeholder="Your Name" />
@@ -163,56 +372,21 @@ p{
                 <input type="text" class="message-box" placeholder="Message" />
               </div>
               <div class="btn_box">
-                <button style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  background: white;color: #082e81;">
+                <button>
                   SEND
                 </button>
               </div>
             </form>
           </div>
         </div>
+        <div class="col-lg-6 col-md-6 px-0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.5504489914156!2d73.7911714243227!3d18.6392793155391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9b55a376e81%3A0xe01cc59620ed793e!2sMayur%20Trade%20Center%2C%20Chinchwad%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411019!5e0!3m2!1sen!2sin!4v1699520612170!5m2!1sen!2sin" width="100%" height="453" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       </div>
     </div>
   </section><br><br><br>
   <!-- end contact section -->
- <!-- vista -->
- <section class="vista_section layout_padding3" style="background-color: #011132;"> 
-    <div class="container-fluid_1_2">
-      <div class="row">
-        <span class="dudul">Dudulgaon</span>
-        <span class="info">
-            Embrace a lifestyle that eloquently tells the story of grace and sophistication. <br><br>
 
-            Renuka nilay offers 1, 2, and 3 BHK flats in Dudulgaon.<br>
-            Renuka Nilay, your haven of happiness, situated in Dudulgaon, offers meticulously designed 1, 2, and 3 BHK residences. With lush gardens and modern amenities, it stands as the epitome of sophisticated living in the area.<br><br><br>
-            
-            Why compromise on the most substantial commitment of your life—your home—when your ultimate goal is to provide your family with the finest living experience? These 2 BHK flats in Dudulgaon, boast state-of-the-art amenities, excellent connectivity, and a breathtaking view, making Renuka Nilay one of the most esteemed spaces and the perfect home you've been seeking. It's an opportunity that turns dreams into reality.<br><br><br>
-            
-            Renuka Nilay stands as the perfect choice for those seeking to purchase a 3 BHK flat in Dudulgaon. It offers exceptional road, rail, and upcoming metro connectivity, along with easy access to all the necessary amenities for a luxurious lifestyle. Supermarkets, hospitals, schools, parks, and more are conveniently situated in close proximity to Renuka Nilay.
-        </span>
-      </div>
-    </div>
-  </section><br><br><br>
-
-  <!-- Nilay -->
-  <!-- building -->
-  <section class="elevation_section" style="background-color: #324e8a;"> 
-    <div class="container-fluid_n">
-      <div class="row">
-       
-        <div class="col-lg-7 col-md-6">
-       
-             <img src="images/elevation.jpeg" alt="" style="width: 100%;">
-        </div>
-         <div class="col-lg-4 col-md-5  layout_padding inn" style="color: white;">
-            <h3>New design. <br>
-                New pleasures.</h3>
-                <span> Renuka Nilay presents an opulent lifestyle merging elegant design, careful planning, and intricate attention to detail. The internal structure and aesthetics, along with the serene external amenities, establish an atmosphere that is not only welcoming but also energizing.</span><br>
-                <span class="e_now">Enquiry Now</span>
-        </div>
-      </div>
-    </div>
-  </section><br><br><br>
-  <!-- building -->
    <!-- info section -->
    <section class="info_section ">
 
