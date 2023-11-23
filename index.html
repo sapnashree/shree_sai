@@ -35,17 +35,113 @@
   /* justify-content: space-between; */
   
 .item {
-  width: calc(33.33% - 20px); 
-  margin-bottom: 20px; 
+  width: calc(25% - 0px); 
+  /* margin-bottom: 20px;  */
+  /* padding:15px; */
+  width: calc(25% - 0px);
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 }
+.img-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.img-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 236, 236, 0);
+    transition: background-color 0.3s;
+    z-index: 1;
+    
+}
+@media (max-width: 768px) {
+  .item {
+    width: calc(33.33% - 20px);
+  }
+}
+
+.img-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(248, 236, 236, 0);
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+.parallelogram {
+	width: 20%;
+    /* height: 50px; */
+    transform: skew(20deg);
+    background: #495d88;
+    position: relative;
+    left: 40%;
+    padding: 1%;
+    text-align: center;
+    font-size: 1rem;
+    color: white;  
+}
+
+.parallelogram span {
+    display: inline-block;
+    transform: skew(-20deg);
+}
+.about_section {
+    position: relative;
+    background-image: url(images/about-img.jpg);
+    background-size: cover;
+}
+
+.about_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 3, 3, 70%); 
+}
+
+.container {
+  color: white; 
+    position: relative;
+    z-index: 1; 
+}
+
+.detail-box {
+    text-align: justify;
+}
+.btn_readmore{
+  z-index: 1;
+  position: relative;
+  background-color: white;
+  color: #324e8a;
+  border-radius: 25px;
+  padding: 11px;
+}
+
+
 </style>
 </head>
 
 <body>
 
   <div class="hero_area">
-    <!-- header section strats -->
     <header class="header_section">
       <div class="header_bottom">
         <div class="container-fluid">
@@ -59,7 +155,7 @@
             </button>
     
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav ms-auto"> <!-- Use ms-auto class here -->
                 <li class="nav-item active dropdown cool-link">
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -69,9 +165,9 @@
                 <li class="nav-item dropdown cool-link">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
                   <ul class="dropdown-menu">
-                    <li><a href="complete.html">Completed</a></li>
-                    <li><a href="undercontruction.html">UnderConstruction</a></li>
-                    <li><a href="upcoming.html">Upcoming</a></li>
+                    <li><a  class="test" href="complete.html">Completed</a></li>
+                    <li><a  class="test" href="undercontruction.html">UnderConstruction</a></li>
+                    <li><a  class="test" href="upcoming.html">Upcoming</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown cool-link">
@@ -81,14 +177,13 @@
                   <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
               </ul>
-              <div class="quote_btn-container">
-                <a href="contact.html" class="quote_btn">Get A Quote</a>
-              </div>
             </div>
           </nav>
         </div>
       </div>
     </header>
+    
+    
     <!-- end header section -->
     <!-- slider section -->
     <section class="slider_section ">
@@ -226,17 +321,13 @@
   </section>
 
   <!-- end service section -->
-
-
   <!-- about section -->
 
-  <section class="about_section"  style="background: url(images/test-.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;padding:50px">
-    <div class="container  ">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
+  <section class="about_section" style="padding: 40px;">
+    <div class="container">
+      <!-- <div class="row">
+        <div class="col-md-5">
+          <div class="detail-box" style="text-align:justify;">
             <div class="heading_container">
               <h2>
                 About Us
@@ -250,295 +341,140 @@
             </a>
           </div>
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-7 ">
           <div class="img-box">
             <img src="images/about-img.jpg" alt="">
           </div>
         </div>
 
-      </div>
+      </div> -->
+      <h3 class="text-center">About Us</h3>
+      <p style=" color: white; 
+      position: relative;
+      z-index: 1; ">
+        At Shree Sai Developers, we take pride in our unwavering commitment to providing exceptional construction and development services. Our journey began with a vision to revolutionize the construction industry by delivering innovative solutions and unmatched quality. With years of experience and a dedicated team, we stand as a reliable partner in bringing your dreams to life.<br><br>Established in 2010, Shree Sai Developers has flourished from its humble beginnings. What started as a small team of passionate individuals has evolved into a renowned construction company. Over the years, we've worked on diverse projects, from residential buildings to commercial spaces, consistently delivering excellence and exceeding expectations.
+      </p><br>
+      <a href="about.html" class="btn_readmore">
+        Read More
+      </a>
     </div>
   </section>
 
   <!-- end about section -->
   <!-- project section -->
-
-  <section class="project_section_1">
-    <div style="position: relative;width: 100%; left: 0;text-align: center; font-size: 3.5rem;color: #495d88;padding: 20px;">Projects</div><br>
+  <section class="project_section_1" style="padding: 40px;">
+  <div class="parallelogram"><span>Projects</span></div><br>
     <div class="container2 flex-container">
       
       <div class="item">
-        <div class="box">
+        <a href="vista.html" class="pin_link"> <div class="box">
+       
           <div class="img-box">
+            <img src="images/6.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <p style="color: #828895;font-size: 12px;">Residential</p>
+            <h5> Renuka Vista </h5>
+            <p style="color: #828895;font-size: 12px;">Location</p>
+            <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+          </div>
+        </div>
+      </a>
+      </div>
+      <div class="item">
+        <a href="nilay.html" class="pin_link"><div class="box">
+          <div class="img-box">
+            <img src="images/7.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+              <p style="color: #828895;font-size: 12px;">Residential</p>
+              <h5>  Renuka Nilay  </h5>
+              <p style="color: #828895;font-size: 12px;">Location</p>
+              <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+            </div>
+        </div>
+      </a>
+      </div>
+      <div class="item">
+        <a href="vista.html" class="pin_link"> <div class="box">
+              <div class="img-box">
+                <img src="images/3.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <p style="color: #828895;font-size: 12px;">Residential</p>
+                <h5>Sai Darshan</h5>
+                <p style="color: #828895;font-size: 12px;">Location</p>
+                <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="item">
+            <a href="vista.html" class="pin_link">  <div class="box">
+              <div class="img-box">
+                <img src="images/9.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <p style="color: #828895;font-size: 12px;">Residential</p>
+                <h5>Sai Darshan</h5>
+                <p style="color: #828895;font-size: 12px;">Location</p>
+                <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="vista.html" class="pin_link"> <div class="box">
+              <div class="img-box">
+                <img src="images/5.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <p style="color: #828895;font-size: 12px;">Residential</p>
+                <h5>Renuka Sai</h5>
+                <p style="color: #828895;font-size: 12px;">Location</p>
+                <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="item">
+            <a href="vista.html" class="pin_link"> <div class="box">
+              <div class="img-box">
+                <img src="images/project1.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <p style="color: #828895;font-size: 12px;">Residential</p>
+                <h5>Sai Aangan</h5>
+                <p style="color: #828895;font-size: 12px;">Location</p>
+                <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="item">
             <a href="vista.html" class="pin_link">
-              <i class="fa fa-link" aria-hidden="true"></i>
-            </a>
-            <img src="images/project1.jpg" alt="" />
-          </div>
-          <div class="detail-box">
-            <h5>
-              Renuka Vista
-            </h5>
-            <p>
-              alteration in some form, by injected humour, or randomised words which don't look even slightly
-              believable. If you are going to use
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/project1.jpg" alt="" />
-            <a href="nilay.html" class="pin_link">
-              <i class="fa fa-link" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="detail-box">
-            <h5>
-              Renuka Nilay 
-            </h5>
-            <p>
-              alteration in some form, by injected humour, or randomised words which don't look even slightly
-              believable. If you are going to use
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <a href="vista.html" class="pin_link">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-                <img src="images/project1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Sai Darshan
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <a href="vista.html" class="pin_link">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-                <img src="images/project2.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Renuka Shobha
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-
-              <div class="img-box">
-                <a href="vista.html" class="pin_link">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-                <img src="images/project1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Renuka Sai
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <a href="vista.html" class="pin_link">
-                  <i class="fa fa-link" aria-hidden="true"></i>
-                </a>
-                <img src="images/project1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Sai Anagan
-                </h5>
-                <p>
-                  alteration in some form, by injected humour, or randomised words which don't look even slightly
-                  believable. If you are going to use
-                </p>
-              </div>
-            </div>
-        
-          </div>
-          <div class="item">
-                <div class="box">
+              <div class="box">
                      <div class="img-box">
-                        <a href="vista.html" class="pin_link">
-              <i class="fa fa-link" aria-hidden="true"></i>
-            </a>
-                    <img src="images/project1.jpg" alt="" />
+                       <img src="images/project2.jpg" alt="" />
                      </div>
-                 <div class="detail-box">
-                    <h5>
-                      Sai Vrindavan
-                    </h5>
-                    <p>
-                      alteration in some form, by injected humour, or randomised words which don't look even     slightly
-                      believable. If you are going to use
-                    </p>
-                     </div>
+                     <div class="detail-box">
+                      <p style="color: #828895;font-size: 12px;">Residential</p>
+                      <h5>Sai Vrindavan</h5>
+                      <p style="color: #828895;font-size: 12px;">Location</p>
+                      <p style="color: #828895;font-size: 12px;">1 & 2 BHK</p>
+                    </div>
                 </div>
+             </a>
           </div>
          
      
     </div>
   </section>
   <!-- end project section -->
-
-  <!-- client section -->
-  <section class="client_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2 style="color: white;">
-          Testimonial
-        </h2>
-      </div>
-    </div>
-    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <ol class="carousel-indicators">
-        <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
-        <li data-target="#customCarousel2" data-slide-to="1"></li>
-        <li data-target="#customCarousel2" data-slide-to="2"></li>
-      </ol>
-    </div>
-  </section>
-  <!-- end client section -->
-
   <!-- why us section -->
-
-  <section class="why_us_section layout_padding">
+  <section class="why_us_section" style="background-color: #f1efef;padding-bottom: 40px;">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container_1">
         <h2>
           Why Choose Us?
         </h2>
@@ -552,7 +488,7 @@
             <h5>
               Project done on time
             </h5>
-            <p>
+            <p style="color: #5d6f95;">
               Maintaining our promise of timely project completion, we adhere to strict deadlines with unwavering commitment. Our dedication to punctuality not only underscores our reliability and professionalism but also secures client satisfaction, ensuring successful project outcomes.
             </p>
           </div>
@@ -565,7 +501,7 @@
             <h5>
               Always avaliable
             </h5>
-            <p>
+            <p style="color: #5d6f95;">
               Prompt and attentive, we stand by your side at every stage of your project. Our commitment to accessibility means being there when you need us most. Your satisfaction is our priority, and our team ensures clear communication and unwavering support throughout, making us your reliable partner in construction.
             </p>
           </div>
@@ -578,7 +514,7 @@
             <h5>
               Professional and responsible
             </h5>
-            <p>
+            <p style="color: #5d6f95;">
               Delivering professional service with a sense of responsibility. We prioritize quality, transparency, and accountability throughout each project, ensuring a trustworthy and reliable construction experience for you.
             </p>
           </div>
@@ -595,7 +531,7 @@
   <!-- end why us section -->
 
   <!-- contact section -->
-  <section class="contact_section layout_padding-bottom">
+  <!-- <section class="contact_section layout_padding-bottom">
     <div class="container-fluid">
       <div class="col-lg-4 col-md-5 offset-md-1">
         <div class="heading_container">
@@ -633,7 +569,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- end contact section -->
 
     <!-- info section -->
